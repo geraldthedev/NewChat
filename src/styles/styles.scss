@@ -1,0 +1,39 @@
+$messenger-back: blue;
+$grid:1fr 1fr;
+
+.container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content-wrapper{
+    display: grid;
+    grid-template-columns: $grid;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.messenger-wrapper{
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    height: 20vh;
+    width: 100vw;
+    background-color: $messenger-back;
+    grid-template-columns: $grid;
+
+}
+
+.chat{
+    
+}
+
+.convo{
+    position: absolute;
+}
