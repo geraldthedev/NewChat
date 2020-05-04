@@ -1,5 +1,6 @@
 $messenger-back: blue;
 $grid:1fr 1fr;
+$border: thin solid black;
 
 .container{
     margin: 0;
@@ -12,28 +13,52 @@ $grid:1fr 1fr;
 .content-wrapper{
     display: grid;
     grid-template-columns: $grid;
+    
+    height: 75vh;
 }
 
+.info{
+    border: $border;
+    
+}
+
+.story{
+    border: $border;
+    
+}
+
+.chat{
+    border: $border;
+    
+}
+
+.misc{
+    border: $border;
+    
+}
 body{
     margin: 0;
     padding: 0;
    
 }
+.divider{
+    height: 5em;
+   background-color: green($color: green);
+}
 .messenger-wrapper{
     display: grid;
     position: absolute;
     bottom: 0;
-    height: 20vh;
+    height: 23vh;
     width: 100vw;
     background-color: $messenger-back;
     grid-template-columns: $grid;
 
 }
 
-.chat{
-    
-}
 
 .convo{
     position: absolute;
+    bottom: 0;
+    
 }

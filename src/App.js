@@ -20,7 +20,7 @@ export default class Main extends React.Component{
                 <div className='story'></div>
                 
                 </div>
-                
+                <span className='divider'></span>
                 <div className="messenger-wrapper">
                     
                     <div className='chat'>
