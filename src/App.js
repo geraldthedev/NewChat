@@ -20,12 +20,16 @@ export default class Main extends React.Component{
                 <div className='story'></div>
                 
                 </div>
-                <span className='divider'></span>
+                
                 <div className="messenger-wrapper">
                     
                     <div className='chat'>
+                        <form>
                     <input className='convo' type='text'></input>
+                    <button className='send' type='submit'>Send</button>
+                    </form>
                     </div>
+                
                     <div className='misc'>
                         misc box
                     </div>
