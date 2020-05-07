@@ -1,5 +1,11 @@
-import React from 'react';
+import React from 'react'
 import './styles/styles.scss'
+import Info from './components/Info';
+import Story from './components/Story';
+import Chat from './components/Chat';
+import Misc from './components/Misc';
+
+
 
 
 
@@ -16,23 +22,16 @@ export default class Main extends React.Component{
         return (
             <div className='container'>
                 <div className='content-wrapper'>
-                <div className='info'></div>
-                <div className='story'></div>
+               <Info />
+               <Story />
                 
                 </div>
                 
                 <div className="messenger-wrapper">
                     
-                    <div className='chat'>
-                        <form>
-                    <input className='convo' type='text'></input>
-                    <button className='send' type='submit'>Send</button>
-                    </form>
-                    </div>
+                    <Chat />
                 
-                    <div className='misc'>
-                        misc box
-                    </div>
+                    <Misc />
                     
                 </div>
                 

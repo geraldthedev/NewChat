@@ -11,14 +11,18 @@ const http = require('http'),
      
       
 
-app.use((req, res) => res.sendFile(INDEX, { root: __dirname }))
+app.get('/',(req, res) => res.sendFile(INDEX, { root: __dirname }))
 app.use(logger('dev'))
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-app.listen(PORT, ()=> console.log(`Listening on ${PORT}`))
+server.listen(PORT, ()=> console.log(`Listening on ${PORT}`))
 
 io.on('connection', (socket)=>{
+    socket.emit('works', { now: 'hello'})
     console.log(`Client connected`);
+    socket.on('other event', (data)=>{
+        console.log(data)
+    })
     socket.on('disconnect', ()=>{
         console.log(`Client disconnected`)
     })
