@@ -1,9 +1,14 @@
 import React from 'react';
 import '../styles/styles.scss'
 
-const Info =()=>(
+
+
+const Info =(props)=>(
+    
         <div className='info'>
-            Info
+            <div id='chatBox'>
+
+            </div>
         </div>
     )
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/styles.scss'
 
-const Story =()=>(
-        <div className='story'>
+const Story =(props)=>(
+        <div className='story' id='story'>
             Story
         </div>
+
     )
 
 
