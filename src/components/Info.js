@@ -3,6 +3,7 @@ import '../styles/styles.scss'
 
 
 
+
 const Info =(props)=>(
     
         <div className='info'>

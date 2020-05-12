@@ -5,7 +5,7 @@ const socket = io('http://localhost:5000'),
         packet = document.getElementById('mess');
 
 
-socket.on('new islander', (data)={
+socket.on('new islander', (data)=>{
     showStory(data)
 });
 
@@ -21,15 +21,16 @@ chatForm.addEventListener('submit', e=>{
 })
 
 showMessage=(formData)=>{
-    const bubble = document.createElement('p')
-    bubble.innerText= formData
+    const bubble = document.createElement('div')
+    bubble.innerHTML= formData
     chatBox.append(bubble)
+
 
 }
 
 showStory=(data)=>{
-    const plot = document.createElement('p')
-    plot.innerText = data
+    const plot = document.createElement('div')
+    plot.innerHTML = data
     storyWindow.append(plot)
 
 }

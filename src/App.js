@@ -15,6 +15,7 @@ export default class Main extends Component{
         
     }
 
+
     componentDidMount(){
         const {endpoint} = this.state;  
         const socket = socketIOClient(endpoint)
