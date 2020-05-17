@@ -27,6 +27,15 @@ export default class Main extends Component{
 
      
     }
+
+    componentDidUpdate(){
+        //this.chatSubmit()
+
+    }
+
+    componentWillUnmount(){
+
+    }
     chatSubmit=async(event)=>{
         event.preventDefault()
         const {endpoint} = this.state;  
